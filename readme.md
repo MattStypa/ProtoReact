@@ -11,8 +11,8 @@ This is my personal Boilerplate I use to build React apps.
 Install the dependencies and build.
 
 ```
-npm install
-npm run watch
+yarn
+yarn watch
 ```
 
 Serve your public directory.
@@ -20,5 +20,5 @@ Serve your public directory.
 ## Build for production
 
 ```
-npm run build
+yarn build
 ```

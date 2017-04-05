@@ -5,7 +5,7 @@ import {combineReducers} from 'redux';
 import WordOfTheDay from 'reducers/wordOfTheDay.js';
 
 export default function getReducers() {
-    return combineReducers({
-        wordOfTheDay: WordOfTheDay
-    });
+  return combineReducers({
+    wordOfTheDay: WordOfTheDay,
+  });
 }
