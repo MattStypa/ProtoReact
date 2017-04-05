@@ -4,16 +4,12 @@ import React from 'react';
 
 import Page from 'components/page.js';
 
-const Home = React.createClass({
-  render: function() {
+export default class Home extends React.PureComponent {
+  render() {
     return (
       <Page>
-        <h1>
-          Welcome
-        </h1>
+        <h1>Welcome</h1>
       </Page>
     );
-  },
-});
-
-export default Home;
+  }
+}

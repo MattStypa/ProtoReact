@@ -9,19 +9,17 @@ const style = {
   fontFamily: 'sans-serif',
 };
 
-const Page = React.createClass({
-  propTypes: {
+export default class Page extends React.PureComponent {
+  static propTypes = {
     children: React.PropTypes.any.isRequired
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <div style={style}>
         {this.props.children}
         <Nav/>
       </div>
     );
-  },
-});
-
-export default Page;
+  }
+}
