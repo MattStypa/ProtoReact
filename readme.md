@@ -15,4 +15,3 @@ This is my personal Boilerplate I use to build React apps.
 - `yarn serve` - start local server.
 - `yarn test` - run test suite.
 - `yarn test:coverage` - run test suite and report coverage.
-- `yarn watch & yarn serve` - runs both `watch` and `serve` commends.

@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Page from 'components/page.js';
 
 export default class Async extends React.PureComponent {
   static propTypes = {
-    fetch: React.PropTypes.func.isRequired,
+    fetch: PropTypes.func.isRequired,
 
-    word: React.PropTypes.string.isRequired,
-    definition: React.PropTypes.string.isRequired,
+    word: PropTypes.string.isRequired,
+    definition: PropTypes.string.isRequired,
   }
 
   componentWillMount() {

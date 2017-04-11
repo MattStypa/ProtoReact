@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Nav from 'components/nav.js';
@@ -9,7 +10,7 @@ const STYLE = {
 
 export default class Page extends React.PureComponent {
   static propTypes = {
-    children: React.PropTypes.any.isRequired
+    children: PropTypes.any.isRequired
   }
 
   render() {
