@@ -1,10 +1,8 @@
-'use strict';
-
 import React from 'react';
 
 import Nav from 'components/nav.js';
 
-const style = {
+const STYLE = {
   color: '#333',
   fontFamily: 'sans-serif',
 };
@@ -16,7 +14,7 @@ export default class Page extends React.PureComponent {
 
   render() {
     return (
-      <div style={style}>
+      <div style={STYLE}>
         {this.props.children}
         <Nav/>
       </div>

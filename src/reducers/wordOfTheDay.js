@@ -1,15 +1,13 @@
-'use strict';
-
 import _ from 'lodash';
 
-import {SET_WORD_OF_THE_DAY} from 'actions/wordOfTheDay';
+import { SET_WORD_OF_THE_DAY } from 'actions/wordOfTheDay';
 
-const initialState = {
+const INITIAL_STATE = {
   word: '',
   definition: '',
 };
 
-export default (state = initialState, action) => {
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SET_WORD_OF_THE_DAY:
       return _.assign({}, state, {

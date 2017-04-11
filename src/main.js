@@ -1,17 +1,15 @@
-'use strict';
-
 import 'babel-polyfill';
 import React from 'react';
-import {render} from 'react-dom';
-import {Provider} from 'react-redux';
-import {Router, browserHistory} from 'react-router-dom';
-import {applyMiddleware, createStore, compose} from 'redux';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk'
 
 import getReducers from 'reducers/reducers.js';
 import routes from 'routes.js';
 
-const store = createStore(
+const STORE = createStore(
   getReducers(),
   compose(
     applyMiddleware(thunk),
@@ -19,12 +17,18 @@ const store = createStore(
   )
 );
 
+function renderRoute(route, index) {
+  return (
+    <span key={index}>{route}</span>
+  );
+}
 render(
-  <Provider store={store}>
-    <Router
-      history={browserHistory}
-      routes={routes}
-    />
+  <Provider store={STORE}>
+    <BrowserRouter>
+      <div>
+        {routes.map(renderRoute)}
+      </div>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('app')
 );

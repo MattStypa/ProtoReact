@@ -1,5 +1,3 @@
-'use strict';
-
 import * as ApiClient from 'services/apiClient.js';
 
 jest.useFakeTimers();

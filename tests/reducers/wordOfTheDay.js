@@ -1,6 +1,4 @@
-'use strict';
-
-import {SET_WORD_OF_THE_DAY} from 'actions/wordOfTheDay';
+import { SET_WORD_OF_THE_DAY } from 'actions/wordOfTheDay';
 import WordOfTheDay from 'reducers/wordOfTheDay.js';
 
 it('returns an initial state', () => {

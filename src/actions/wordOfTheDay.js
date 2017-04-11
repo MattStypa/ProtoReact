@@ -1,5 +1,3 @@
-'use strict';
-
 import * as ApiClient from 'services/apiClient.js';
 
 export const SET_WORD_OF_THE_DAY = 'SET_WORD_OF_THE_DAY';

@@ -1,7 +1,5 @@
-'use strict';
-
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Async from 'components/async.js';
 
@@ -30,5 +28,3 @@ it('renders the definition', () => {
 it('fetches on mount', () => {
     expect(fetch).toBeCalled();
 });
-
-

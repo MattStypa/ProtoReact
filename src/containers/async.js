@@ -1,18 +1,16 @@
-'use strict';
+import { connect } from 'react-redux';
 
-import {connect} from 'react-redux';
-
-import {fetch as fetchWordOfTheDay} from 'actions/wordOfTheDay';
+import { fetch as fetchWordOfTheDay } from 'actions/wordOfTheDay';
 import AsyncComponent from 'components/async.js';
 
-const mapStateToProps = (state) => {
+const MAP_STATE_TO_PROPS = (state) => {
   return {
     word: state.wordOfTheDay.word,
     definition: state.wordOfTheDay.definition,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const MAP_DISPATCH_TO_PROPS = (dispatch) => {
   return {
     fetch: () => {
       return dispatch(fetchWordOfTheDay());
@@ -21,8 +19,8 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const Async = connect(
-  mapStateToProps,
-  mapDispatchToProps
+  MAP_STATE_TO_PROPS,
+  MAP_DISPATCH_TO_PROPS
 )(AsyncComponent);
 
 export default Async;

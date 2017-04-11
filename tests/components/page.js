@@ -1,7 +1,5 @@
-'use strict';
-
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Page from 'components/page.js';
 import Nav from 'components/nav.js';

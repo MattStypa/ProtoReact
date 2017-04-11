@@ -6,10 +6,12 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 6,
+    "ecmaVersion": 7,
     "ecmaFeatures": {
+      "impliedStrict": true,
       "jsx": true
     }
   },

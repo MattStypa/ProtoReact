@@ -1,5 +1,3 @@
-'use strict';
-
 import * as WordOfTheDay from 'actions/wordOfTheDay.js';
 import * as ApiClient from 'services/apiClient.js';
 

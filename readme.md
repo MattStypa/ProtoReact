@@ -6,19 +6,13 @@ This is my personal Boilerplate I use to build React apps.
 - __Babel__ - use awesome ES6 features.
 - __ESLint__ - write awesome code.
 - __Jest__ - test your code.
+- __Express__ - see your work in a browser.
 
-## Getting Started
-Install the dependencies and build.
-
-```
-yarn
-yarn watch
-```
-
-Serve your public directory.
-
-## Build for production
-
-```
-yarn build
-```
+## Commands
+- `yarn` - install dependencies.
+- `yarn watch` - build for development.
+- `yarn build` - build for production.
+- `yarn serve` - start local server.
+- `yarn test` - run test suite.
+- `yarn test:coverage` - run test suite and report coverage.
+- `yarn watch & yarn serve` - runs both `watch` and `serve` commends.

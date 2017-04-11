@@ -1,5 +1,3 @@
-'use strict';
-
 export function getWordOfTheDay() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -7,6 +5,6 @@ export function getWordOfTheDay() {
         word: 'Hello!',
         definition: 'Is it me you\'re looking for?',
       });
-    }, 2000);
+    }, 1000);
   });
 }
