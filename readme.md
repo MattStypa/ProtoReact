@@ -9,7 +9,7 @@ This is my personal Boilerplate I use to build React apps.
 - __Express__ - see your work in a browser.
 
 ## Commands
-- `yarn` - install dependencies.
+- `yarn install` - install dependencies.
 - `yarn watch` - build for development.
 - `yarn build` - build for production.
 - `yarn serve` - start local server.
